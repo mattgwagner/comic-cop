@@ -1,0 +1,12 @@
+{
+  "name": "comic-cop",
+  "private": true,
+  "scripts": {
+    "start": "bun server.ts",
+    "deploy": "wrangler deploy",
+    "check": "node e2e/content.mjs && node e2e/migrate.mjs && node e2e/badges.mjs && node e2e/play.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
